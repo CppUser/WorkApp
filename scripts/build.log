@@ -1,0 +1,19 @@
+2025-10-18 15:00:34,146 - __main__ - INFO - [INFO] Starting project build process....
+2025-10-18 15:00:34,157 - __main__ - INFO - [INFO] Premake5 not found. Downloading...
+2025-10-18 15:00:34,157 - __main__ - INFO - [INFO] Downloading Premake5 from https://github.com/premake/premake-core/releases/download/v5.0.0-beta7/premake-5.0.0-beta7-windows.zip
+2025-10-18 15:00:36,148 - __main__ - INFO - [SUCCESS] Premake downloaded and Installed successfully
+2025-10-18 15:00:36,149 - __main__ - INFO - [INFO] Generating project files with action: vs2022
+2025-10-18 15:00:36,819 - __main__ - INFO - [ERROR] ERROR: Premake failed with return code 1
+2025-10-18 15:01:39,260 - __main__ - INFO - [INFO] Starting project build process....
+2025-10-18 15:01:39,263 - __main__ - INFO - [INFO] Premake found
+2025-10-18 15:01:39,263 - __main__ - INFO - [INFO] Generating project files with action: vs2022
+2025-10-18 15:01:39,285 - __main__ - INFO - [ERROR] ERROR: Premake failed with return code 1
+2025-10-18 15:05:04,296 - __main__ - INFO - [INFO] Starting project build process....
+2025-10-18 15:05:04,299 - __main__ - INFO - [INFO] Premake found
+2025-10-18 15:05:04,299 - __main__ - INFO - [INFO] Generating project files with action: vs2022
+2025-10-18 15:05:04,322 - __main__ - INFO - [ERROR] ERROR: Premake failed with return code 1
+2025-10-18 15:07:10,567 - __main__ - INFO - [INFO] Starting project build process....
+2025-10-18 15:07:10,570 - __main__ - INFO - [INFO] Premake found
+2025-10-18 15:07:10,571 - __main__ - INFO - [INFO] Generating project files with action: vs2022
+2025-10-18 15:07:10,617 - __main__ - INFO - [SUCCESS] Project files generated successfully!
+2025-10-18 15:07:10,618 - __main__ - INFO - [SUCCESS] Build process completed!
