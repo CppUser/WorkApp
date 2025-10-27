@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "App.h"
+#include "Log.h"
 
 
 int main(int argc, char** argv)
