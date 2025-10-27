@@ -50,7 +50,7 @@ group "Core" do
     include "Core"
 end
 
-group "App" do
+group "Runtime" do
     include "Runtime"
 end
 

@@ -17,3 +17,8 @@
 2025-10-18 15:07:10,571 - __main__ - INFO - [INFO] Generating project files with action: vs2022
 2025-10-18 15:07:10,617 - __main__ - INFO - [SUCCESS] Project files generated successfully!
 2025-10-18 15:07:10,618 - __main__ - INFO - [SUCCESS] Build process completed!
+2025-10-18 15:10:52,387 - __main__ - INFO - [INFO] Starting project build process....
+2025-10-18 15:10:52,409 - __main__ - INFO - [INFO] Premake found
+2025-10-18 15:10:52,409 - __main__ - INFO - [INFO] Generating project files with action: vs2022
+2025-10-18 15:10:52,455 - __main__ - INFO - [SUCCESS] Project files generated successfully!
+2025-10-18 15:10:52,455 - __main__ - INFO - [SUCCESS] Build process completed!
