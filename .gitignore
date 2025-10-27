@@ -21,3 +21,6 @@ obj/
 **.nsight-gfxproj
 **.DotSettings
 **.user
+
+/Runtime/Core.log
+/Runtime/Layer.log 

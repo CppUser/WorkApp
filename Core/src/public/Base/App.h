@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 
 
 namespace tg
@@ -9,10 +10,9 @@ namespace tg
         App();
         ~App();
 
-        void PreInit();
-
         void Run();
-        
+    private:
+        std::unique_ptr<class Window> mWindow;
     };
 
     
