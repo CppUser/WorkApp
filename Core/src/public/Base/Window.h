@@ -41,6 +41,8 @@ namespace tg
         [[nodiscard]] uint32_t GetHeight() const { return mConfig.dimensions.height; }
         [[nodiscard]] inline void* GetNativeWindow() const { return mWindow; }
 
+        virtual std::pair<uint32_t, uint32_t> GetSize() const { return { mConfig.dimensions.width, mConfig.dimensions.height }; }
+
         static Window* Create(const WindowConfig& config = WindowConfig());
 
     private:

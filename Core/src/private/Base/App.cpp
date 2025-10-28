@@ -2,11 +2,20 @@
 
 #include "Base/Log.h"
 #include "Base/Window.h"
+#include "ImGui/ImGuiLayer.h"
 
 namespace tg
 {
+    App* App::sInstance = nullptr;
+    
     App::App()
     {
+        if (sInstance)
+        {
+            TG(CoreLog, Error, "App already exists!")
+        }
+        sInstance = this;
+        
         TG(CoreLog,Info,"App created")
 
         WindowConfig winCfg;
@@ -21,6 +30,9 @@ namespace tg
 
         mWindow = std::unique_ptr<Window>(Window::Create(winCfg));
         mWindow->Init();
+
+        mImGuiLayer = ImGuiLayer::Create();
+        PushOverlay(mImGuiLayer);
         
     }
 
@@ -74,6 +86,15 @@ namespace tg
 
     void App::RenderImGui()
     {
+        mImGuiLayer->Begin();
+
+        for (auto& layer : mLayerStack)
+        {
+            if (layer && layer->IsActive())
+            {
+                layer->OnImGuiRender();
+            }
+        }
     }
 
 
@@ -96,6 +117,10 @@ namespace tg
                     layer->OnUpdate(mTimeStep);
                 }
             }
+
+            App* app = this;
+            app->RenderImGui();
+            app->mImGuiLayer->End();
             
             mWindow->SwapBuffers();
         }
