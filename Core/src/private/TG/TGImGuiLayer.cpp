@@ -30,7 +30,7 @@ namespace tg
         ImGuiIO& io = ImGui::GetIO();
         App& app = App::Get();
         auto [width, height] = app.GetWindow().GetSize();
-        io.DisplaySize = ImVec2(float(width), float(width));
+        io.DisplaySize = ImVec2(float(width), float(height));
 
         //TODO: Render to swapchain... how do we handle this better?
         glBindFramebuffer(GL_FRAMEBUFFER, 0);

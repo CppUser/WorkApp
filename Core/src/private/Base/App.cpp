@@ -63,25 +63,21 @@ namespace tg
     void App::PushLayer(Layer* layer)
     {
         mLayerStack.PushLayer(layer);
-        layer->OnAttach();
     }
 
     void App::PushOverlay(Layer* layer)
     {
         mLayerStack.PushOverlay(layer);
-        layer->OnAttach();
     }
 
     void App::PopLayer(Layer* layer)
     {
         mLayerStack.PopLayer(layer);
-        layer->OnDetach();
     }
 
     void App::PopOverlay(Layer* layer)
     {
         mLayerStack.PopOverlay(layer);
-        layer->OnDetach();
     }
 
     void App::RenderImGui()
