@@ -11,6 +11,8 @@ public:
     void OnDetach() override;
     void OnUpdate(tg::TimeStep ts) override;
     void OnImGuiRender() override;
+private:
+    bool mShowDemoWindow = false;
 };
 
 
