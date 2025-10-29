@@ -13,6 +13,8 @@ public:
     void OnImGuiRender() override;
 private:
     bool mShowDemoWindow = false;
+    bool mShowAboutWindow = false;
+    bool mShowUsageGuide = false;
 };
 
 
