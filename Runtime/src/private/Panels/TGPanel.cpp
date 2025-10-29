@@ -1,4 +1,4 @@
-﻿#include "UI/Panels/TGPanel.h"
+﻿#include "Panels/TGPanel.h"
 
 #include <cmath>
 #include <sstream>
